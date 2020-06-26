@@ -1,0 +1,6 @@
+<aura:component access="global" implements="lightningcommunity:allowInRelaxedCSP,forceCommunity:availableForAllPageTypes">
+<aura:attribute name="flowName" access="global" type="String"/>  
+<aura:handler event="forceCommunity:routeChange" action="{!c.handleRouteChange}"/>
+<aura:handler name="init" value="{!this}" action="{!c.init}"/>
+   <lightning:flow aura:id="flowData" onstatuschange="{!c.handleStatusChange}"/>
+</aura:component>
